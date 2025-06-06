@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div v-if="loading" class="d-flex justify-content-center align-items-center vh-100">
+    <div class="spinner-grow text-secondary">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div v-else>
     <div
       class="bg-success w-100 position-relative overflow-hidden mb-4 py-5 d-flex align-items-center hero-section"
     >
